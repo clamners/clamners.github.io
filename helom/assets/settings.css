@@ -1,0 +1,283 @@
+@font-face {
+ font-family: 'Appetite';
+ src: url('../fonts/subset-Appetite.woff2') format('woff2'),
+ url('../fonts/subset-Appetite.woff') format('woff'),
+ url('../fonts/subset-Appetite.ttf') format('truetype');
+ font-weight: normal;
+ font-style: normal;
+}
+
+.m1-form ::-webkit-input-placeholder {
+ color: #222;
+}
+
+.m1-form ::-moz-placeholder {
+ color: #222;
+}
+
+.m1-form :-moz-placeholder {
+ color: #222;
+}
+
+.m1-form :-ms-input-placeholder {
+ color: #222;
+}
+
+.m1-form :focus::-webkit-input-placeholder {
+ color: transparent;
+}
+
+.m1-form :focus::-moz-placeholder {
+ color: transparent;
+}
+
+.m1-form :focus:-moz-placeholder {
+ color: transparent;
+}
+
+.m1-form :focus:-ms-input-placeholder {
+ color: transparent;
+}
+
+.hidden {
+ display: none;
+}
+
+.center {
+ text-align: center;
+}
+
+.just {
+ text-align: justify;
+ -moz-text-align-last: center;
+ text-align-last: center;
+}
+
+.clrfix:after {
+ content: '';
+ display: block;
+ clear: both;
+}
+
+.clear {
+ clear: both;
+ height: 0;
+}
+
+.ulfix {
+ font-size: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-weight: 700;
+}
+
+b, strong {
+ font-weight: 700;
+}
+
+body {
+ width: 100%;
+ min-width: 320px;
+ padding: 0;
+ margin: 0 auto;
+ font-family: 'Gotham Pro', Arial, Helvetica, sans-serif;
+ font-weight: 400;
+ font-size: 16px;
+ line-height: 24px;
+ color: #222;
+ background: #fff;
+}
+
+section {
+ width: 100%;
+ max-width: 1920px;
+ margin: 0 auto;
+ padding: 45px 0;
+}
+
+.wrap {
+ width: 1100px;
+ padding: 0 10px;
+ margin: 0 auto;
+ height: 100%;
+ position: relative;
+}
+
+.wrap:after {
+ clear: both;
+ content: "";
+ display: table;
+}
+
+.nopad {
+ padding: 0;
+}
+
+.m1-form input.field {
+ position: relative;
+ display: block;
+ outline: 0;
+ border: 1px solid #e6e6e6;
+ background: #fafafa;
+ width: 100%;
+ height: 64px;
+ line-height: 62px;
+ margin: 0 auto 15px;
+ padding: 0 20px;
+ font-family: 'Gotham Pro', Arial, Helvetica, sans-serif;
+ font-size: 16px;
+ font-weight: 400;
+ color: #222;
+ text-align: center;
+ -webkit-border-radius: 10px;
+ -moz-border-radius: 10px;
+ border-radius: 10px;
+ -webkit-transition: all 0.2s;
+ -moz-transition: all 0.2s;
+ -o-transition: all 0.2s;
+ -ms-transition: all 0.2s;
+ transition: all 0.2s;
+}
+
+.button-m {
+    position: relative;
+    display: block;
+    width: 300px;
+    height: 70px;
+    line-height: 70px;
+    margin: 0 auto;
+    border: none;
+    text-align: center;
+    font-family: 'Gotham Pro', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    background: #f5721c;
+    border-radius: 5px;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.button-m span {
+	position: relative;
+	padding-left: 30px;
+}
+
+.button-m span:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: url(../img/btn.png) no-repeat;
+    left: 0;
+    top: 3px;
+}
+
+.button-m:hover {
+ 	background: #f9883d;
+}
+.button-m:active {
+ top: 1px;
+}
+
+h2.title {
+ font-family: 'Gotham Pro', Arial, Helvetica, sans-serif;
+ font-size: 36px;
+ font-weight: bold;
+ line-height: 42px;
+ color: #222;
+ margin: 0 0 35px 0;
+}
+
+h2.title span {
+
+}
+
+
+/*   video   */
+.video-container {
+ position: relative;
+ padding-bottom: 56.25%;
+ height: 0;
+ overflow: hidden;
+ background: #333;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed,
+.video-container .youtube {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+}
+
+/* Arrows */
+.slick-slide img {
+ margin: 0 auto;
+}
+
+.slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 230px;
+    display: block;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: url(../img/arrow-slider.png) 50% 50% no-repeat #f5721c;
+    width: 40px;
+    height: 40px;
+    z-index: 3;
+}
+
+.slick-prev {
+ left: -19px;
+ -moz-transform: rotate(180deg);
+ -webkit-transform: rotate(180deg);
+ -o-transform: rotate(180deg);
+ -ms-transform: rotate(180deg);
+ transform: rotate(180deg);
+}
+
+.slick-next {
+ right: -19px;
+}
+
+@media screen and (max-width: 1115px) {
+
+    .wrap {
+        width: 960px;
+    }
+
+}
+
+@media screen and (max-width: 959px) {
+
+ .wrap {
+  width: 640px;
+ }
+
+}
+
+@media screen and (max-width: 639px) {
+
+ .wrap {
+  width: 320px;
+ }
+
+}
